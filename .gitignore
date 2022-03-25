@@ -1,11 +1,21 @@
+# Hexafarms
+Datasets/
+test/
+*.mp4
+*.sh
+Examples/
+Examples_old/
+.vscode/
+
+
 # Ignore all
-*
+# *
 
 # Unignore all with extensions
-!*.*
+# !*.*
 
 # Unignore all dirs
-!*/
+# !*/
 
 CMakeLists.txt.user
 CMakeLists_modified.txt
