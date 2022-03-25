@@ -2,6 +2,27 @@
 
 ### Hexafarms figure out automated monitoring using SLAM
 
+### Supports how to use custom dataset 
+
+1. Calibrate your camera using [hexafarms' repo](https://github.com/HexaFarms/Cam_Calibration)
+* Compose your configure file in ``` Examples/Monocular/Hexa.yaml ```
+2. Generate a series of images from your custom video
+```
+sudo apt install ffmpeg
+ffmpeg -i testvideo.mp4 frame%d.png
+// in case, image resize: vf scale="640:-1" but intrinsic value should be changed.
+``` 
+
+3. Generate text files which generate compatible text file. 
+```
+python hexafarms/gen_txt_imgs.py
+```
+4. Run the script below
+
+```
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/hexa.yaml ./hexafarms
+```
+
 [![Drone SLAM](demo/SLAM_Drone.png)](https://www.youtube.com/watch?v=Nr5Vn0nZLp0 "SLAM in indoor farm")
 
 
