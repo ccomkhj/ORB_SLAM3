@@ -24,6 +24,7 @@ python hexafarms/gen_txt_imgs.py
 ```
 
 [![Drone SLAM](demo/SLAM_Drone.png)](https://www.youtube.com/watch?v=Nr5Vn0nZLp0 "SLAM in indoor farm")
+click the image to watch the video
 
 
 
